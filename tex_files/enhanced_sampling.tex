@@ -26,15 +26,17 @@ Replica Exchange with Solute Scaling(REST2) method.
   
 \chapter{Theory} 
 
-As we know Hamiltonian of the system is sacled by a factor of $\lambda$ in REST2 as shown below :
+Hamiltonian representing the potential energy of the system can be written as sum of ots respective contributions as shown below :
 
 \begin{center}
     \begin{equation}
-        E_{n}^{REST3}(X_{n}) = \lambda_{n}^{pp} E_{pp}(X_{n}) + \lambda_{n}^{pw} E_{pw}(X_{n}) + \lambda_{n}^{ww} E_{ww} (X_{n})
+        E_{n}^{scaled}(X_{n}) = \lambda_{n}^{pp} E_{pp}(X_{n}) + \lambda_{n}^{pw} E_{pw}(X_{n}) + \lambda_{n}^{ww} E_{ww} (X_{n})
     \end{equation}
 \end{center}
 
-$\lambda_{n}$ is the scaling factor which scales the resciptive energy contribtuions as shown below :  
+
+Where, $\lambda_{n}$ is the scaling factor which scales the respective energy contributions as shown below :  
+
 \begin{center}
     \begin{equation}
         \lambda_{n}^{pp}=\frac{\beta_{n}}{\beta_{0}} \ ; \quad \lambda_{n}^{pw}=\sqrt{\frac{\beta_{n}}{\beta_{0}}} \ ; \quad \lambda_{n}^{ww}=1;        
