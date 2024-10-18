@@ -12,6 +12,54 @@
 
 \chapter{Introduction}
 % Your content goes here
+Studying and understanding the underlying molecular dynamics of biological systems is very helpful. Very many experimental techniques are developed over the course of scientific history.
+However, the there are limitations to experimental techniques for example we can't explain the atomistic details of molecular interactions, it will hard to extract the conformational dynamics
+with fast transitions between them, hard to understand the localized dynamics of a biological system etc. From the dawn of molecular computational techniques it opened a new frontier to study
+and explore the atomistic regiem of molecular interactions with the use of computational techniques. From simulating a small molecule containing a couple of atoms to large biological systems 
+was made possible with integration of experimental data and optimizing the base parameters used in the simulations because of which we are able to reproduce physical relevant ensembles similar 
+to experimental observables. Development of computational techniques and advancement in computational 
+resources made it possible to study the bio-molecular systems of various length scales and there dynamics at atomistic level. Still computational techniques are limited by various factors
+such as athenticity of the force field used, the time scale of the simulation, the size of the system, the sampling of the conformational space etc. To overcome some of these limitations
+computational techniques widely know as enhanced sampling methods are developed which are helpful in reducing the simulation time scales required to generate the conformational ensembles.
+There are many techniques in the literature in which we will be discussing about an method called solvent-scaled Replica Exchange with Solute Scaling which is an optimized version of 
+Replica Exchange with Solute Scaling(REST2) method.        
+  
+\chapter{Theory} 
+
+As we know Hamiltonian of the system is sacled by a factor of $\lambda$ in REST2 as shown below :
+
+\begin{center}
+    \begin{equation}
+        E_{n}^{REST3}(X_{n}) = \lambda_{n}^{pp} E_{pp}(X_{n}) + \lambda_{n}^{pw} E_{pw}(X_{n}) + \lambda_{n}^{ww} E_{ww} (X_{n})
+    \end{equation}
+\end{center}
+
+$\lambda_{n}$ is the scaling factor which scales the resciptive energy contribtuions as shown below :  
+\begin{center}
+    \begin{equation}
+        \lambda_{n}^{pp}=\frac{\beta_{n}}{\beta_{0}} \ ; \quad \lambda_{n}^{pw}=\sqrt{\frac{\beta_{n}}{\beta_{0}}} \ ; \quad \lambda_{n}^{ww}=1;        
+    \end{equation}
+\end{center}
+
+where $\beta_{0}=\frac{1}{k_{B}T_{0}}$.
+
+\begin{center}
+    \begin{equation}
+        \epsilon_{n}^{rescaled} = \kappa_{n}^{2} * \epsilon_{n}
+    \end{equation}
+\end{center}
+
+\begin{center}
+    \begin{equation}
+        \kappa_{n}=\kappa_{low}*\exp{ \biggl(n*\frac{\log(\kappa_{high}/\kappa_{low})}{N_{r}-1}\biggr)} \ ; \quad 1.00 \leq \kappa_{n} \leq 1.10
+    \end{equation}
+\end{center}
+
+\begin{center}
+    \begin{equation}
+        \epsilon_{p:OW}=(\epsilon_{p:p}^{rescaled} * \epsilon_{OW:OW}^{rescaled})^{\frac{1}{2}}=\lambda_{n}^{pw}\kappa_{n}*(\epsilon_{p:p} * \epsilon_{OW:OW})^{\frac{1}{2}}
+    \end{equation}
+\end{center}
 
 \begin{table}[h!]
 \centering
