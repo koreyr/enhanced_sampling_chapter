@@ -13,9 +13,10 @@
 \tableofcontents
 
 \chapter{Replica Exchange Solute Tempering Methods}
-\chapterprecis{Jayakrishna Koneru and Korey Reid, and Paul Robustelli}
-
-{Introduction}
+\chapterprecis{Jaya Krishna Koneru and Korey Reid, and Paul Robustelli}
+\section{Abstract}
+Accurate simulations of intrinsically disordered proteins and peptides provides predictive power and insight into experimental findings extending our predictive capabilities in molecular interactions and understanding biological mechanisms. Unlike equilibrium simulations of ordered proteins in their ground state, simulating disordered proteins, as well as rare allosteric effects in structured proteins, require long continuous simulations which may not be well sampled even out to 1 ms. Replica exchange molecular dynamics simulations with solvent scaling proves to be a powerful group of methods to sample dynamics with limited resources. REST2 and ssREST3 show promise in accelerating the sampling of
+\section{Introduction}
 % Your content goes here
 Studying and understanding the underlying molecular dynamics of biological systems is very helpful. Very many experimental techniques are developed over the course of scientific history.
 However, the there are limitations to experimental techniques for example we can't explain the atomistic details of molecular interactions, it will hard to extract the conformational dynamics
@@ -31,60 +32,27 @@ Replica Exchange with Solute Scaling(REST2) method.
   
 \chapter{Theory} 
 
-Hamiltonian representing the potential energy of the system can be written as sum of ots respective contributions as shown below :
+The hamiltonian representing the potential energy of the system can be written as sum of respective contributions, separated into protein-protein, protein-water and water-water:
+\input{equations/remd_hamiltonian.tex}
+$\lambda_{n}^M$ is the scaling factor, where $M=\{ pp, pw, ww\}
+$ which scales the corresponding energy term. For REST2, $\lambda_n^{ww}=1$, $\lambda_n^{pp}=(\lambda_n^{pw})^2=\lambda_n$, for simplicity the REST2 hamiltonian simplifies to:
+% import simplified hamiltonian of REST2
+\input{equations/rest2_hamiltonian.tex}
+% import lambda scaling equation
+where,
+\input{equations/lambda_scaling.tex}
+% import temperature factor expression
+where \input{equations/thermodynamic_beta.tex}. 
 
-\begin{center}
-    \begin{equation}
-        E_{n}^{scaled}(X_{n}) = \lambda_{n}^{pp} E_{pp}(X_{n}) + \lambda_{n}^{pw} E_{pw}(X_{n}) + \lambda_{n}^{ww} E_{ww} (X_{n})
-    \end{equation}
-\end{center}
+
+\input{equations/epsilon_scaling.tex}
+
+\input{equations/kappa_scaling.tex}
 
 
-Where, $\lambda_{n}$ is the scaling factor which scales the respective energy contributions as shown below :  
 
-\begin{center}
-    \begin{equation}
-        \lambda_{n}^{pp}=\frac{\beta_{n}}{\beta_{0}} \ ; \quad \lambda_{n}^{pw}=\sqrt{\frac{\beta_{n}}{\beta_{0}}} \ ; \quad \lambda_{n}^{ww}=1;        
-    \end{equation}
-\end{center}
+\input{equations/water_scaling}
 
-where $\beta_{0}=\frac{1}{k_{B}T_{0}}$.
-
-\begin{center}
-    \begin{equation}
-        \epsilon_{n}^{rescaled} = \kappa_{n}^{2} * \epsilon_{n}
-    \end{equation}
-\end{center}
-
-\begin{center}
-    \begin{equation}
-        \kappa_{n}=\kappa_{low}*\exp{ \biggl(n*\frac{\log(\kappa_{high}/\kappa_{low})}{N_{r}-1}\biggr)} \ ; \quad 1.00 \leq \kappa_{n} \leq 1.10
-    \end{equation}
-\end{center}
-
-\begin{center}
-    \begin{equation}
-        \epsilon_{p:OW}=(\epsilon_{p:p}^{rescaled} * \epsilon_{OW:OW}^{rescaled})^{\frac{1}{2}}=\lambda_{n}^{pw}\kappa_{n}*(\epsilon_{p:p} * \epsilon_{OW:OW})^{\frac{1}{2}}
-    \end{equation}
-\end{center}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-Method & $T_{max}$K & $\lambda$ & $\epsilon_{CA}$ & $\kappa$ & $\epsilon_{OW}$ \\
-\hline
--- & 300 & 1.0 & 0.359824 & 1.0 & 0.998989 \\
-\hline
-REST2 & 450 & 0.666667 & 0.239883 & 1.0 & 0.998989 \\
-\hline
-ssREST3 & 450 & 0.666667 & 0.239883 & 1.1 & 1.20878 \\
-
-\hline
-\end{tabular}
-\caption{Table showing the differences and similarities of $\epsilon$ scaling between the REST2 and ssREST3 methods. In case of ssREST3 the 
-water $\epsilon$ gets scaled along with the solute $\epsilon$ by a factor if $\kappa^{2}$ where as solvent parameters are not scaled during REST2.}
-\label{tab:eps_table}
-\end{table}
+\input{tables/vdw_scaling_table}
 
 \end{document}
