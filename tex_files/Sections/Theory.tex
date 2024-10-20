@@ -1,0 +1,23 @@
+From Replica Exchange Molecular Dynamics\cite{Sugita1999}, the hamiltonian representing the potential energy of the system can be written as sum of respective contributions, separated into protein-protein, protein-water and water-water:
+\input{equations/remd_hamiltonian.tex}
+$\lambda_{n}^M$ is the scaling factor, where $M=\{ pp, pw, ww\}
+$ which scales the corresponding energy term. For REST2\cite{Wang2011}, $\lambda_n^{ww}=1$, $\lambda_n^{pp}=(\lambda_n^{pw})^2=\lambda_n$, for simplicity the REST2 hamiltonian simplifies to:
+% import simplified hamiltonian of REST2
+\input{equations/rest2_hamiltonian.tex}
+% import lambda scaling equation
+where,
+\input{equations/lambda_scaling.tex}
+% import temperature factor expression
+and \input{equations/thermodynamic_beta.tex}. 
+
+Upon investigation, disordered proteins containing hydrophobic residues undergo conformational collapse with respect to scaling  $E^{pw}$ to higher effective temperatures. This outcome is unfavorable when attempting to capture a representative ensemble as hydrophobic collapse reduces the overall sampling of the proteins degrees of freedom. % We need to say something here to the effect: REST2's ability to enhance hydrophobic interactions is synonamous with reducing the quality of the solvent, water. 
+\cite{Zhang2023}
+
+
+\input{equations/epsilon_scaling.tex}
+
+\input{equations/kappa_scaling.tex}
+
+
+
+\input{equations/water_scaling}

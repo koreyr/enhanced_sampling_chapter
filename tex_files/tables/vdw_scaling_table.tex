@@ -1,18 +1,18 @@
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    Method & $T_{max}$K & $\lambda$ & $\epsilon_{CA}$ & $\kappa$ & $\epsilon_{OW}$ \\
+    \caption{Table showing the differences and similarities of $\epsilon$ scaling between the REST2 and ssREST3 methods. In case of ssREST3 the 
+    water $\epsilon$ gets scaled along with the solute $\epsilon$ by a factor if $\kappa^{2}$ where as solvent parameters are not scaled during REST2.}
+    \begin{tabular}{c | c c c c c }
+
+    Method & $T_{max}(K)$ & $\lambda$ & $\epsilon_{CA}$ & $\kappa$ & $\epsilon_{OW}$ \\
     \hline
     -- & 300 & 1.0 & 0.359824 & 1.0 & 0.998989 \\
-    \hline
     REST2 & 450 & 0.666667 & 0.239883 & 1.0 & 0.998989 \\
-    \hline
+
     ssREST3 & 450 & 0.666667 & 0.239883 & 1.1 & 1.20878 \\
     
     \hline
     \end{tabular}
-    \caption{Table showing the differences and similarities of $\epsilon$ scaling between the REST2 and ssREST3 methods. In case of ssREST3 the 
-    water $\epsilon$ gets scaled along with the solute $\epsilon$ by a factor if $\kappa^{2}$ where as solvent parameters are not scaled during REST2.}
+    
     \label{tab:eps_table}
 \end{table}

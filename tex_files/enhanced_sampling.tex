@@ -2,6 +2,9 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\addbibresource{enhanced_sampling.bib}
+
 \title{Enhanced Sampling Techniques}
 \begin{document}
 
@@ -15,44 +18,15 @@
 \chapter{Replica Exchange Solute Tempering Methods}
 \chapterprecis{Jaya Krishna Koneru and Korey Reid, and Paul Robustelli}
 \section{Abstract}
-Accurate simulations of intrinsically disordered proteins and peptides provides predictive power and insight into experimental findings extending our predictive capabilities in molecular interactions and understanding biological mechanisms. Unlike equilibrium simulations of ordered proteins in their ground state, simulating disordered proteins, as well as rare allosteric effects in structured proteins, require long continuous simulations which may not be well sampled even out to 1 ms. Replica exchange molecular dynamics simulations with solvent scaling proves to be a powerful group of methods to sample dynamics with limited resources. REST2 and ssREST3 show promise in accelerating the sampling of
+\input{Sections/Abstract.tex}
+
 \section{Introduction}
 % Your content goes here
-Studying and understanding the underlying molecular dynamics of biological systems is very helpful. Very many experimental techniques are developed over the course of scientific history.
-However, the there are limitations to experimental techniques for example we can't explain the atomistic details of molecular interactions, it will hard to extract the conformational dynamics
-with fast transitions between them, hard to understand the localized dynamics of a biological system etc. From the dawn of molecular computational techniques it opened a new frontier to study
-and explore the atomistic regiem of molecular interactions with the use of computational techniques. From simulating a small molecule containing a couple of atoms to large biological systems 
-was made possible with integration of experimental data and optimizing the base parameters used in the simulations because of which we are able to reproduce physical relevant ensembles similar 
-to experimental observables. Development of computational techniques and advancement in computational 
-resources made it possible to study the bio-molecular systems of various length scales and there dynamics at atomistic level. Still computational techniques are limited by various factors
-such as athenticity of the force field used, the time scale of the simulation, the size of the system, the sampling of the conformational space etc. To overcome some of these limitations
-computational techniques widely know as enhanced sampling methods are developed which are helpful in reducing the simulation time scales required to generate the conformational ensembles.
-There are many techniques in the literature in which we will be discussing about an method called solvent-scaled Replica Exchange with Solute Scaling which is an optimized version of 
-Replica Exchange with Solute Scaling(REST2) method.        
+\input{Sections/Introduction.tex}
   
 \chapter{Theory} 
 
-The hamiltonian representing the potential energy of the system can be written as sum of respective contributions, separated into protein-protein, protein-water and water-water:
-\input{equations/remd_hamiltonian.tex}
-$\lambda_{n}^M$ is the scaling factor, where $M=\{ pp, pw, ww\}
-$ which scales the corresponding energy term. For REST2, $\lambda_n^{ww}=1$, $\lambda_n^{pp}=(\lambda_n^{pw})^2=\lambda_n$, for simplicity the REST2 hamiltonian simplifies to:
-% import simplified hamiltonian of REST2
-\input{equations/rest2_hamiltonian.tex}
-% import lambda scaling equation
-where,
-\input{equations/lambda_scaling.tex}
-% import temperature factor expression
-where \input{equations/thermodynamic_beta.tex}. 
-
-
-\input{equations/epsilon_scaling.tex}
-
-\input{equations/kappa_scaling.tex}
-
-
-
-\input{equations/water_scaling}
+\input{Sections/Theory.tex}
 
 \input{tables/vdw_scaling_table}
-
 \end{document}
