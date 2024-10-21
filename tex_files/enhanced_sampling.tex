@@ -5,6 +5,8 @@
 \usepackage[style=numeric-comp]{biblatex}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{amsmath}
 \usepackage[%
     left=1in,%
     right=1in,%
@@ -31,18 +33,24 @@
 \section{Abstract}
 \input{Sections/Abstract.tex}
 
+\textbf{Keywords} Molecular dynamics, Replica Exchange, Collective variables, Solute-Scaling, $\alpha$-synuclein
+
 \section{Introduction}
+
 % Your content goes here
+\begin{adjustwidth}{2in}{0in}
+    
+
 \input{Sections/Introduction.tex}
 
 \input{Sections/Theory.tex}
-
+\end{adjustwidth}
 \section{Methods}
-
+\begin{adjustwidth}{2in}{0in}
 \input{Sections/Methods.tex}
 
 \input{Sections/Simulations.tex}
-
+\end{adjustwidth}
 \input{tables/vdw_scaling_table}
 \input{tables/vdw_noscaling_table.tex}
 
