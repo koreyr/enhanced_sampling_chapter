@@ -1,11 +1,15 @@
-Studying and understanding the underlying molecular dynamics of biological systems is very helpful. Very many experimental techniques are developed over the course of scientific history.
-However, the there are limitations to experimental techniques for example we can't explain the atomistic details of molecular interactions, it will hard to extract the conformational dynamics
-with fast transitions between them, hard to understand the localized dynamics of a biological system etc. From the dawn of molecular computational techniques it opened a new frontier to study
-and explore the atomistic regiem of molecular interactions with the use of computational techniques. From simulating a small molecule containing a couple of atoms to large biological systems 
-was made possible with integration of experimental data and optimizing the base parameters used in the simulations because of which we are able to reproduce physical relevant ensembles similar 
-to experimental observables. Development of computational techniques and advancement in computational 
-resources made it possible to study the bio-molecular systems of various length scales and there dynamics at atomistic level. Still computational techniques are limited by various factors
-such as athenticity of the force field used, the time scale of the simulation, the size of the system, the sampling of the conformational space etc. To overcome some of these limitations
-computational techniques widely know as enhanced sampling methods are developed which are helpful in reducing the simulation time scales required to generate the conformational ensembles.
-There are many techniques in the literature in which we will be discussing about an method called solvent-scaled Replica Exchange with Solute Scaling which is an optimized version of 
-Replica Exchange with Solute Scaling(REST2) method.   
+Studying and critically understanding the underlying dynamics of biological systems at the atomistic scale can provide valuable insight into molecular mechanisms. 
+Over many decades experimental techniques have been and continue to be developed in a collective effort to investigate processes at the molecular scale.
+However, the limitations of experimental techniques often are restricted from producing clear and relevant explaintions at the atomistic level. 
+This is in large part to the ensemble characteristic of experimental measurements and lends to the difficulty of extracting conformational dynamics at various timescales, as well as extracting localized dynamics of say a biological system. 
+Upon entry of molecular dynamics the usefullness was apparent, albiet limited by computational speed. 
+As molecular dynamics engines\cite{Weiner1981,gotz2012,salomon-ferrer2013,Brooks1983,Brooks2009,VanDerSpoel2005} and their accompanied forcefields\cite{Huang2016,Ploetz2021,Cornell1995,lindorff-larsen2010,Robustelli2018,Jakobsen2015,Piana2020} have matured, our ability to reach microsecond timescales has become routine. 
+While the product of many decades of effort have resulted in our ability to simulate microseconds for a single biomolecule, vastly extending our comprehension of atomistic dynamics when paired with experimental results, these timescales are in fact beneath the threshold required to study rare events, e.g. allosteric transitions, or sample large degrees of freedom often accompanying IDPs. 
+
+When the desire is to study conformational dynamics it becomes a neccessity for long-timescale simulations on supercomputing systems\cite{Shaw2009,Shaw2014}, for all other cases where statistical measures of an ensemble enhanced sampling techniques are available\cite{Lee2016,Wang2011,Qi2018,Vitalis2009,Zhang2023,Ray2023,Prakash2018}. 
+The phenomenological observation desired dictates which simulation methodology will provide usefull information.
+One such method, Replica Exchange Solute Tempering or REST\cite{Liu2005,Wang2011,Zhang2023}, has arrisen from Hamiltonian Replica Exchange Molecular Dynamics derived from Replica Exchange Molecular Dynamics. 
+
+
+
+There are many techniques in the literature in which we will be discussing about an method called solvent-scaled Replica Exchange with Solute Scaling which is an optimized version of Replica Exchange with Solute Scaling(REST2) method.   
