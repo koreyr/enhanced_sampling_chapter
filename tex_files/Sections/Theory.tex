@@ -11,10 +11,10 @@ where,
 % import temperature factor expression
 and \input{equations/thermodynamic_beta.tex}. 
 
-Upon implementation of metropolis acceptance criteria with detail balance being satisfied, the acceptance probability between state $n$ ans $n+1$ is given by:
+Upon implementation of metropolis acceptance criteria with detail balance being satisfied, the acceptance probability between state $n$ and $n+1$ is given by:
 \input{equations/rest2_AR.tex}
 
-The independence from the solvent interaction in the acceptance criteria makes it such that we have good acceptance between the replicas.  
+By excluding the solvent w.r.t. scaling the interaction energies  independence from the solvent interaction in the acceptance criteria makes it such that we have good acceptance between the replicas.  
 
 Upon investigation, disordered proteins containing hydrophobic residues undergo conformational collapse with respect to scaling  $E^{pw}$ to higher effective temperatures. 
 This outcome is unfavorable when attempting to capture a representative ensemble as hydrophobic collapse reduces the overall sampling of the proteins degrees of freedom. % We need to say something here to the effect: REST2's ability to enhance hydrophobic interactions is synonamous with reducing the quality of the solvent, water. 
