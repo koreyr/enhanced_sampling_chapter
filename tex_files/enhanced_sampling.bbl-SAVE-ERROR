@@ -19,6 +19,50 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{Best2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=150823e11aec187e5703632ab229b003}{%
+           family={Best},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=576131f3926dd5fe87c981ac5708770b}{%
+           family={Mittal},
+           familyi={M\bibinitperiod},
+           given={Jeetain},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5554514620ef36feb3eeb0e25742ac4f}
+      \strng{fullhash}{5554514620ef36feb3eeb0e25742ac4f}
+      \strng{bibnamehash}{5554514620ef36feb3eeb0e25742ac4f}
+      \strng{authorbibnamehash}{5554514620ef36feb3eeb0e25742ac4f}
+      \strng{authornamehash}{5554514620ef36feb3eeb0e25742ac4f}
+      \strng{authorfullhash}{5554514620ef36feb3eeb0e25742ac4f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A recognized shortcoming in current protein simulations is that most force fields are parametrized with relatively primitive three-site water models. Since the deficiencies of the common three-site water models in reproducing the phase diagram of water are well-known, an improved description of the solvent will be required, for example, to study proteins in molecular simulations at thermodynamic conditions other than standard temperature and pressure. Here, we combine a protein force field derived from Amber ff03 together with the highly optimized TIP4P/2005 water model, with a small backbone modification to match the population of helical states obtained with the new water model to experiment. Remarkably, we find that the resulting force field, Amber ff03w, produces a more cooperative helix-coil transition, compared with the similarly "backbone-corrected" Amber ff03* model with TIP3P water, with calculated helix propagation parameters in good agreement with the experiment. The radius of gyration for nonhelical conformations is significantly larger for Amber ff03w than for Amber ff03* and shows a collapse with increasing temperature as found in single-molecule experiments on longer proteins. The origin of the collapse appears to be a more favorable enthalpic component of the peptide-solvent interaction and is correlated with increasing turn formation, in accord with the experiment. In addition to this enhanced cooperativity, we verify that, with the new force field, replica exchange folding simulations of the GB1 hairpin and Trp cage result in folded structures, starting from completely unfolded initial conditions; simulations of folded proteins are also stable. These results together suggest that Amber ff03w (with TIP4P/2005) will be well suited for studying protein folding and properties of unfolded state and intrinsically disordered proteins over a wide range of thermodynamic conditions.}
+      \field{issn}{1520-6106}
+      \field{issue}{46}
+      \field{journaltitle}{The Journal of Physical Chemistry B}
+      \field{month}{11}
+      \field{title}{Protein Simulations with an Optimized Water Model: Cooperative Helix Formation and Temperature-Induced Unfolded State Collapse}
+      \field{volume}{114}
+      \field{year}{2010}
+      \field{pages}{14916\bibrangedash 14923}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/jp108618d
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/jp108618d
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/jp108618d
+      \endverb
+      \keyw{Computer Simulation,Hydrogen Bonding,Models,Molecular,Molecular Structure,Protein Denaturation,Protein Folding,Protein Structure,Secondary,Proteins,Proteins: chemistry,Temperature,Thermodynamics,Water,Water: chemistry}
+    \endentry
     \entry{Sugita1999}{article}{}
       \name{author}{2}{}{%
         {{hash=19a2698a8ef84fc6b8fa7ddd71e25bad}{%
