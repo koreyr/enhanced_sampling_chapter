@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber enhanced_sampling"] 1729468576.56297 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729468579.85936 0
-  "enhanced_sampling.bcf" 1729468579.73575 107550 0a8589ad4220fcdbc87ad25f0ef1fa57 "pdflatex"
+["biber enhanced_sampling"] 1729468881.83609 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729468885.89981 0
+  "enhanced_sampling.bcf" 1729468885.80001 107748 c51bc9f6be936a89bce8b6309129ab02 "pdflatex"
   "enhanced_sampling.bib" 1729468168.84275 5627 3201637e58c6f7858b387b128f82126b ""
   (generated)
   "enhanced_sampling.bbl"
   "enhanced_sampling.blg"
   (rewritten before read)
-["pdflatex"] 1729468578.8063 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729468579.85966 0
-  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729468556.16095 621 50af8fc3b00da8283447e277f39a17e8 ""
+["pdflatex"] 1729468884.9777 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729468885.90008 0
+  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729468880.80676 635 a5f2289f79bc8c8f4e9e9577a534dfd2 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -45,7 +45,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1215737283 139826 9213617a7cb78635fc326b859c0b2273 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb" 1215737283 140194 627cc7f36c05b80e25d178974ccb3442 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1215737283 145929 f25e56369a345c4ff583b067cd87ce8e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb" 1215737283 131078 d96015a2fa5c350129e933ca070b2484 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb" 1215737283 156075 f7390bd7a6232a5277f5784aabbb7426 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb" 1215737283 186554 e8f0fa8ca05e038f257a06405232745f ""
@@ -63,6 +62,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty" 1705352648 5319 2b738d02ce36ada6dcdd9534940db0ee ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty" 1705352648 5048 425739d70251273bf93e3d51f3c40048 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/shortvrb.sty" 1705352648 4142 6814a4b8b840eec90d906eb516880f44 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx" 1342308459 92 7cdbb04a1e32fba0fbb91b6e6d123497 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx" 1609451401 1818 9ed166ac0a9204a8ebe450ca09db5dde ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx" 1609451401 25680 409c3f3d570418bc545e8065bebd0688 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg" 1342308459 69 249fa6df04d948e51b6d5c67bea30c42 ""
@@ -71,7 +71,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty" 1609451401 8433 72f8188742e7214b7068f345cd0287ac ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def" 1643926307 13919 5426dbe90e723f089052b4e908b56ef9 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def" 1643926307 32455 8d3e554836db11aab80a8e11be62e1b1 ""
-  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx" 1678141846 4629 cda468e8a0b1cfa0f61872e171037a4b ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx" 1678141846 10425 7de071597dabda19c14ff0780122d6d4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1643926307 39965 48ce9ce3350aba9457f1020b1deba5cf ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -102,11 +102,11 @@
   "Sections/Abstract.tex" 1729466733.00953 705 2de3dddc05158fdb7d82602bf54b50de ""
   "Sections/Introduction.tex" 1729466702.16413 1861 bcae52c0336d7cf42aed58f9d560aa6d ""
   "Sections/Theory.tex" 1729468340.88319 1409 79e3e37a4f51670229f69595d3f45be9 ""
-  "enhanced_sampling.aux" 1729468579.73285 2261 fdcb23e67313e0dc34c85d4a9a85248a "pdflatex"
-  "enhanced_sampling.bbl" 1729468578.77058 10132 afbbff35e46b9fbd064e2f09e3e59de7 "biber enhanced_sampling"
-  "enhanced_sampling.run.xml" 1729468579.7364 2403 91894bfad397b1c377a7bcc7b8ae09f0 "pdflatex"
-  "enhanced_sampling.tex" 1729468556.16095 621 50af8fc3b00da8283447e277f39a17e8 ""
-  "enhanced_sampling.toc" 1729468579.73646 416 246b705a3ec71ee6ee52980127306c64 "pdflatex"
+  "enhanced_sampling.aux" 1729468885.79715 2261 fdcb23e67313e0dc34c85d4a9a85248a "pdflatex"
+  "enhanced_sampling.bbl" 1729468884.02568 10132 afbbff35e46b9fbd064e2f09e3e59de7 "biber enhanced_sampling"
+  "enhanced_sampling.run.xml" 1729468885.80064 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
+  "enhanced_sampling.tex" 1729468880.80676 635 a5f2289f79bc8c8f4e9e9577a534dfd2 ""
+  "enhanced_sampling.toc" 1729468885.80071 416 246b705a3ec71ee6ee52980127306c64 "pdflatex"
   "equations/epsilon_scaling.tex" 1729461272.41354 162 4858b6c5aaf2ff308b90cf7c723b61f2 ""
   "equations/kappa_scaling.tex" 1729461174.37432 241 e1639ba37a47dca585b97e66ec3d718f ""
   "equations/lambda_scaling.tex" 1729463015.87778 307 60d9d53b4726af9eda29a798a7dce3b0 ""
