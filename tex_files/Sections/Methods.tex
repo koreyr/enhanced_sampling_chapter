@@ -7,7 +7,6 @@
 }
 
 Implementing the ssREST3 in molecular dynamics simulations requires the use of the PLUMED2.8 plugin for GROMACS version 2023.5. 
-<<<<<<< HEAD
 The first step in the ssREST3 implementation is to generate the a processed topology file your solvated protein of interest using \textit{-pp} option in \textit{gmx grompp}.
 
 \begin{lstlisting}[language=sh, basicstyle=\ttfamily\small]
@@ -25,13 +24,6 @@ of the solvent, for example OW$_{tip4pd}$ which is the water oxygen atom of ambe
 as mentioned in Eq. \ref{eq:kappa_scaling}, \ref{eq:wat_scaling}. 
 If $\kappa_{n}$ is set to 1.0 across all replicas one can observe the it behaves like a conventional REST2. 
 Along with the scaling of the water oxygen we also made sure that the self interaction of the solvent molecules and there interactions with the ions will not be effected by adding three additions lines in the \textit{[nonbonded]} section of the GROMACS topology file as shown in \ref{tab:eps_noscale_table}.
-=======
-The first step in the ssREST3 implementation is to generate the topology files your protein of interest which is solvated in a box. 
-This topology files will be used as to implement REST2 scaling procedure using PLUMED2.8. 
-After the topology files are generated for the respective replicates the heavy atoms of the solvent, for example OW$_{tip4p}$ which is the water oxygen atom of amber99sb-\textit{disp} force field whose $\epsilon$ will be scaled by a factor of $\kappa^{2}_{n}$ to satisfy the scaling condition as mentioned in Eq. \ref{eq:epsilon_scaling}, \ref{eq:wat_scaling}. 
-If $\kappa_{n}$ is set to 1.0 across all replicas on can observe the it behaves like a conventional REST2. 
-Along with the scaling of the water oxygen we also made sure that the self interaction of the solvent molecules and there interactions with the ions will no tbe effected by adding 3 additions lines in the \textit{[nonbonded]} section of the GROMACS topology file as shown in \ref{tab:eps_noscale_table}.
->>>>>>> master
 Once this changes are made to the topology files we are ready to run the simulations.
 Using the below command all the replicates are run in parallel and the the conformational exchange between the replicas is set for every 800 steps which equates to 1.6 ps.
 

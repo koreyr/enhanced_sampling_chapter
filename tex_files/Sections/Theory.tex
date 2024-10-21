@@ -20,27 +20,16 @@ Upon investigation, disordered proteins containing hydrophobic residues undergo 
 This outcome is unfavorable when attempting to capture a representative ensemble as hydrophobic collapse reduces the overall sampling of the proteins degrees of freedom. % We need to say something here to the effect: REST2's ability to enhance hydrophobic interactions is synonamous with reducing the quality of the solvent, water. 
 \citeauthor{Zhang2023} \citeyear{Zhang2023} provided a basis for biasing the scaling such that protein collapse is minimized or negated. The formalism they proposed,
 \input{equations/rest3_hamiltonian.tex}
-<<<<<<< HEAD
 
-By incorporating the scaling factor $\kappa_n$, where $n=\{1,2,3,\ldots,n_{replica}\}$, the dampening effect of $\lambda$ is deminished. To accomplish this $\kappa_n$ exist in the range $[1.0,1.1]$. Due to the method of implementation the base replica (unscaled topology), following conversion of the topologies to REST3 \cite{Zhang2023} formalism using combination rule 1 instead of 2, does not match the potential energy of the original topology. 
-The implementation of REST3 by \citeauthor{Zhang2023} targeted scaling of protein water atoms, this led to inception of ssREST3 where $\lambda_n$ is still applied to the protein in the same fashion as REST2 \cite{Wang2011} and apply solvent scaling on the water oxygen borrowing from the methods described in \citeauthor{Best2010} \citeyear{Best2010}. $\kappa_n$ is defined by the expression, 
-=======
 By incorporating the scaling factor $\kappa_n$, where $n=\{1,2,3,\ldots,n_{replica}\}$, the dampening effect of $\lambda$ is deminished. To accomplish this $\kappa_n$ exist in the range $[1.0,1.1]$. 
 Due to the method of implementation the base replica (unscaled topology), following conversion of the topologies to REST3 \cite{Zhang2023} formalism using combination rule 1 instead of 2, does not match the potential energy of the original topology. 
-The implementation of REST3 by \citeauthor{Zhang2023} targeted scaling of protein water atoms, this led to inception of ssREST3 where $\lambda_n$ is still applied to the protein in the same fashion as REST2 \cite{Wang2011} and apply solvent scaling on the water oxygen borrowing from the methods described in \citeauthor{Best2010} \citeyear{Best2010}. 
-$\kappa_n$ is defined by the expression, 
->>>>>>> master
+The implementation of REST3 by \citeauthor{Zhang2023} targeted scaling of protein water atoms, this led to inception of ssREST3 where $\lambda_n$ is still applied to the protein in the same fashion as REST2 \cite{Wang2011} and apply solvent scaling on the water oxygen borrowing from the methods described in \citeauthor{Best2010} \citeyear{Best2010}. $\kappa_n$ is defined by the expression, 
 \input{equations/kappa_scaling.tex}
 
 To correctly identify where $\kappa_n$ is applied, we start with an expression for the Lennard-Jones potential between the $i^{th}$ protein atom and the water oxygen,
 \input{equations/lj_potential.tex}
-<<<<<<< HEAD
 
 The CHARMM and Amber forcefields both conform to the Lorentz-Berthelot rules, i.e. $\epsilon_{i,j}=\sqrt{\epsilon_i\cdot \epsilon_j}$. From Equation \ref{eq:lj_potential} we can refactor $\sqrt{\lambda_n}\cdot\kappa_n\cdot\epsilon_{i,OW}$ to clarify which forcefield parameters are scaled. 
-=======
-The CHARMM and Amber forcefields both conform to the Lorentz-Berthelot rules, i.e. $\epsilon_{i,j}=\sqrt{\epsilon_i\cdot \epsilon_j}$. 
-From Equation \ref{eq:lj_potential} we can refactor $\sqrt{\lambda_n}\cdot\kappa_n\cdot\epsilon_{i,OW}$ to clarify which forcefield parameters are scaled. 
->>>>>>> master
 \input{equations/water_scaling}
 
 %\input{equations/epsilon_scaling.tex}
