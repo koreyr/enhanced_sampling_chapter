@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber enhanced_sampling"] 1729532095.71818 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729532099.2039 0
-  "enhanced_sampling.bcf" 1729532099.10585 108129 919ecfece4dd5b71bb1d083cb6339a06 "pdflatex"
+["biber enhanced_sampling"] 1729532095.71818 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729533493.98634 0
+  "enhanced_sampling.bcf" 1729533493.89056 108129 919ecfece4dd5b71bb1d083cb6339a06 "pdflatex"
   "enhanced_sampling.bib" 1729471708.30879 8295 bafd3ede4581f01531edeb67b03a5cd4 ""
   (generated)
   "enhanced_sampling.bbl"
   "enhanced_sampling.blg"
   (rewritten before read)
-["pdflatex"] 1729532098.22229 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729532099.20434 0
-  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729532095.56525 727 ee25043fee531855fec943148451a3d3 ""
+["pdflatex"] 1729533493.04005 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729533493.98663 0
+  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729533492.8787 732 eb6146ea2388386ffee79bb9f5d48f36 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -101,14 +101,14 @@
   "Sections/Abstract.tex" 1729490431.99999 700 5eb14961b22c946916ee8bebcdc53685 ""
   "Sections/Introduction.tex" 1729466702.16413 1861 bcae52c0336d7cf42aed58f9d560aa6d ""
   "Sections/Theory.tex" 1729490498.72513 2935 d0a31526e43b7793bf770fc09d0cbd3e ""
-  "enhanced_sampling.aux" 1729532099.10378 2880 0fe01cdb8a510e7641d4e4c0043a241f "pdflatex"
+  "enhanced_sampling.aux" 1729533493.8884 2880 0fe01cdb8a510e7641d4e4c0043a241f "pdflatex"
   "enhanced_sampling.bbl" 1729532098.19379 13981 bef876247ba9bf1cfc4671b066e43081 "biber enhanced_sampling"
-  "enhanced_sampling.run.xml" 1729532099.10648 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
-  "enhanced_sampling.tex" 1729532095.56525 727 ee25043fee531855fec943148451a3d3 ""
-  "enhanced_sampling.toc" 1729532099.10654 585 221e495c85f5b146d4aae3d672b3b3df "pdflatex"
+  "enhanced_sampling.run.xml" 1729533493.8912 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
+  "enhanced_sampling.tex" 1729533492.8787 732 eb6146ea2388386ffee79bb9f5d48f36 ""
+  "enhanced_sampling.toc" 1729533493.89126 585 221e495c85f5b146d4aae3d672b3b3df "pdflatex"
   "equations/kappa_scaling.tex" 1729470722.5788 242 45d02f122ac8dd1aee4218b39fe96373 ""
   "equations/lambda_scaling.tex" 1729463015.87778 307 60d9d53b4726af9eda29a798a7dce3b0 ""
-  "equations/lj_potential.tex" 1729532091.40133 307 b4ccd98d9e889de277a74c12e49e6686 ""
+  "equations/lj_potential.tex" 1729533489.13111 307 b4ccd98d9e889de277a74c12e49e6686 ""
   "equations/remd_hamiltonian.tex" 1729462224.19934 227 4449e7f10fc60dab8283674191ed0117 ""
   "equations/rest2_hamiltonian.tex" 1729469960.12444 214 b88d9a02c503d3160ed701c3a8c4bac5 ""
   "equations/rest3_hamiltonian.tex" 1729481251.1234 256 dff337ec20ce04c2e819576f30c5c077 ""
