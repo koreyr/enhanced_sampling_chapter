@@ -154,7 +154,6 @@ INPUT Sections/Abstract.tex
 INPUT ./Sections/Introduction.tex
 INPUT ./Sections/Introduction.tex
 INPUT Sections/Introduction.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsl1000.tfm
 INPUT ./Sections/Theory.tex
 INPUT ./Sections/Theory.tex
 INPUT Sections/Theory.tex
@@ -176,6 +175,7 @@ INPUT equations/rest3_hamiltonian.tex
 INPUT ./equations/kappa_scaling.tex
 INPUT ./equations/kappa_scaling.tex
 INPUT equations/kappa_scaling.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsl1000.tfm
 INPUT ./equations/epsilon_scaling.tex
 INPUT ./equations/epsilon_scaling.tex
 INPUT equations/epsilon_scaling.tex
