@@ -1,21 +1,14 @@
-\lstset{
-    tabsize=4, % tab space width
-    showstringspaces=false, % don't mark spaces in strings
-    commentstyle=\color{green}, % comment color
-    keywordstyle=\color{blue}, % keyword color
-    stringstyle=\color{red} % string color
-}
 
 Implementing the ssREST3 in molecular dynamics simulations requires the use of the PLUMED2.8 plugin for GROMACS version 2023.5. 
 The first step in the ssREST3 implementation is to generate the a processed topology file your solvated protein of interest using \textit{-pp} option in \textit{gmx grompp}.
 
-\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small]
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true]
     gmx grompp -f *.mdp -c *.gro -r *.gro -p topol.top -o *.tpr -pp
 \end{lstlisting}
 
 This topology files will be used as to implement REST2 scaling procedure using PLUMED2.8 where one will supply the processed topology file and the corresponding $\lambda$ value as such :
 
-\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small]
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true]
     plumed partial\_tempering  $\lambda_{n}$ < processed.top > scaled.top
 \end{lstlisting}
 
@@ -27,7 +20,7 @@ Along with the scaling of the water oxygen we also made sure that the self inter
 Once this changes are made to the topology files we are ready to run the simulations.
 Using the below command all the replicates are run in parallel and the the conformational exchange between the replicas is set for every 800 steps which equates to 1.6 ps.
 
-\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small]
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true]
     gmx  grompp -f *.mdp -c *.gro -r *.gro -p scaled.top -o scaled.tpr
     gmx mdrun -s scaled.tpr -multi <replica folders> -replex 800 -deffnm replica -plumed plumed.dat
 \end{lstlisting}
