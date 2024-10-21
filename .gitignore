@@ -1,0 +1,23 @@
+#exclude generated files
+*.pdf
+*.aux
+*.log
+*xml
+*gz
+*fls
+*blg
+*bbl*
+*bcf
+*latexmk
+
+#include files
+!Fig*.pdf
+!*ipynb
+!*png
+!*svg
+!*gro
+!*pdb
+!*md
+
+#some excluded directories
+# /extra
