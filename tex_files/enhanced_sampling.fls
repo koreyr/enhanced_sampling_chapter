@@ -176,14 +176,14 @@ INPUT ./equations/kappa_scaling.tex
 INPUT ./equations/kappa_scaling.tex
 INPUT equations/kappa_scaling.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsl1000.tfm
-INPUT ./equations/epsilon_scaling.tex
-INPUT ./equations/epsilon_scaling.tex
-INPUT equations/epsilon_scaling.tex
 INPUT ./equations/water_scaling.tex
 INPUT ./equations/water_scaling.tex
 INPUT ./equations/water_scaling.tex
 INPUT ./equations/water_scaling.tex
 INPUT equations/water_scaling.tex
+INPUT ./equations/epsilon_scaling.tex
+INPUT ./equations/epsilon_scaling.tex
+INPUT equations/epsilon_scaling.tex
 INPUT ./tables/vdw_scaling_table.tex
 INPUT ./tables/vdw_scaling_table.tex
 INPUT ./tables/vdw_scaling_table.tex
