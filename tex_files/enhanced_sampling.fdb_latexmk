@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber enhanced_sampling"] 1729532095.71818 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729533493.98634 0
-  "enhanced_sampling.bcf" 1729533493.89056 108129 919ecfece4dd5b71bb1d083cb6339a06 "pdflatex"
+["biber enhanced_sampling"] 1729536016.13055 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729536020.45487 0
+  "enhanced_sampling.bcf" 1729536020.35319 108129 919ecfece4dd5b71bb1d083cb6339a06 "pdflatex"
   "enhanced_sampling.bib" 1729471708.30879 8295 bafd3ede4581f01531edeb67b03a5cd4 ""
   (generated)
   "enhanced_sampling.bbl"
   "enhanced_sampling.blg"
   (rewritten before read)
-["pdflatex"] 1729533493.04005 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729533493.98663 0
-  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729533492.8787 732 eb6146ea2388386ffee79bb9f5d48f36 ""
+["pdflatex"] 1729536019.5091 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729536020.45533 0
+  "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729536017.14481 783 30350e8cd7a3f0bfcf8afb122b7f428b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -39,6 +39,8 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb" 1215737283 139826 9213617a7cb78635fc326b859c0b2273 ""
@@ -100,12 +102,14 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Sections/Abstract.tex" 1729490431.99999 700 5eb14961b22c946916ee8bebcdc53685 ""
   "Sections/Introduction.tex" 1729466702.16413 1861 bcae52c0336d7cf42aed58f9d560aa6d ""
+  "Sections/Methods.tex" 1729535669.84972 1106 48debed0421820a0925c49b4fcb9d8a7 ""
+  "Sections/Simulations.tex" 1729536003.80479 72 7993619671f9f04f80875fb7ab9b7626 ""
   "Sections/Theory.tex" 1729490498.72513 2935 d0a31526e43b7793bf770fc09d0cbd3e ""
-  "enhanced_sampling.aux" 1729533493.8884 2880 0fe01cdb8a510e7641d4e4c0043a241f "pdflatex"
-  "enhanced_sampling.bbl" 1729532098.19379 13981 bef876247ba9bf1cfc4671b066e43081 "biber enhanced_sampling"
-  "enhanced_sampling.run.xml" 1729533493.8912 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
-  "enhanced_sampling.tex" 1729533492.8787 732 eb6146ea2388386ffee79bb9f5d48f36 ""
-  "enhanced_sampling.toc" 1729533493.89126 585 221e495c85f5b146d4aae3d672b3b3df "pdflatex"
+  "enhanced_sampling.aux" 1729536020.34984 3237 2117f02ee70f26672635328db5472bfb "pdflatex"
+  "enhanced_sampling.bbl" 1729536018.50088 13981 bef876247ba9bf1cfc4671b066e43081 "biber enhanced_sampling"
+  "enhanced_sampling.run.xml" 1729536020.35407 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
+  "enhanced_sampling.tex" 1729536017.14481 783 30350e8cd7a3f0bfcf8afb122b7f428b ""
+  "enhanced_sampling.toc" 1729536020.35415 527 8f0e62250f62aa8dc6f57aa2ca06e0cc "pdflatex"
   "equations/kappa_scaling.tex" 1729470722.5788 242 45d02f122ac8dd1aee4218b39fe96373 ""
   "equations/lambda_scaling.tex" 1729463015.87778 307 60d9d53b4726af9eda29a798a7dce3b0 ""
   "equations/lj_potential.tex" 1729533489.13111 307 b4ccd98d9e889de277a74c12e49e6686 ""
@@ -114,6 +118,7 @@
   "equations/rest3_hamiltonian.tex" 1729481251.1234 256 dff337ec20ce04c2e819576f30c5c077 ""
   "equations/thermodynamic_beta.tex" 1729463474.8291 69 fe0049e35b35cf855aba4941f0022d44 ""
   "equations/water_scaling.tex" 1729485820.87283 343 6d2e518cca1791eb011ee0eb4350122b ""
+  "tables/vdw_noscaling_table.tex" 1729535669.85025 486 d15533334c801505eb0d428b40bc09bc ""
   "tables/vdw_scaling_table.tex" 1729466455.05989 710 a59a1815e526fe2050b5e253a656c2eb ""
   (generated)
   "enhanced_sampling.aux"
