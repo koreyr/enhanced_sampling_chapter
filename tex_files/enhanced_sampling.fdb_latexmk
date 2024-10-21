@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber enhanced_sampling"] 1729471094.17319 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729471159.88861 0
-  "enhanced_sampling.bcf" 1729471159.77366 108003 49f20925e4398b912b850e2c78aeab58 "pdflatex"
-  "enhanced_sampling.bib" 1729468168.84275 5627 3201637e58c6f7858b387b128f82126b ""
+["biber enhanced_sampling"] 1729471740.01664 "enhanced_sampling.bcf" "enhanced_sampling.bbl" "enhanced_sampling" 1729471746.06007 0
+  "enhanced_sampling.bcf" 1729471745.96106 108129 919ecfece4dd5b71bb1d083cb6339a06 "pdflatex"
+  "enhanced_sampling.bib" 1729471708.30879 8295 bafd3ede4581f01531edeb67b03a5cd4 ""
   (generated)
   "enhanced_sampling.bbl"
   "enhanced_sampling.blg"
   (rewritten before read)
-["pdflatex"] 1729471158.89667 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729471159.88889 0
+["pdflatex"] 1729471745.09669 "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" "enhanced_sampling.pdf" "enhanced_sampling" 1729471746.06038 0
   "/Users/koreyreid/github/enhanced_sampling_chapter/tex_files/enhanced_sampling.tex" 1729468934.00341 636 af60af19be2c2347a4789b0537aa1eac ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -101,12 +101,12 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Sections/Abstract.tex" 1729466733.00953 705 2de3dddc05158fdb7d82602bf54b50de ""
   "Sections/Introduction.tex" 1729466702.16413 1861 bcae52c0336d7cf42aed58f9d560aa6d ""
-  "Sections/Theory.tex" 1729471158.69915 2398 7611825ed2fb559d64a089952774a2fd ""
-  "enhanced_sampling.aux" 1729471159.77101 2549 d2c6258db0fb43a2afe95bbfe4096b57 "pdflatex"
-  "enhanced_sampling.bbl" 1729471096.4487 10132 afbbff35e46b9fbd064e2f09e3e59de7 "biber enhanced_sampling"
-  "enhanced_sampling.run.xml" 1729471159.77444 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
+  "Sections/Theory.tex" 1729471744.92236 2441 d4b70e293cb99a695c25dd680feb602d ""
+  "enhanced_sampling.aux" 1729471745.95808 2663 54dc685c4833c865889065f39d655531 "pdflatex"
+  "enhanced_sampling.bbl" 1729471742.24995 13981 bef876247ba9bf1cfc4671b066e43081 "biber enhanced_sampling"
+  "enhanced_sampling.run.xml" 1729471745.96183 2444 e1db6f0953f4a8324cd03f314178cee2 "pdflatex"
   "enhanced_sampling.tex" 1729468934.00341 636 af60af19be2c2347a4789b0537aa1eac ""
-  "enhanced_sampling.toc" 1729471159.77452 416 246b705a3ec71ee6ee52980127306c64 "pdflatex"
+  "enhanced_sampling.toc" 1729471745.9619 416 246b705a3ec71ee6ee52980127306c64 "pdflatex"
   "equations/epsilon_scaling.tex" 1729461272.41354 162 4858b6c5aaf2ff308b90cf7c723b61f2 ""
   "equations/kappa_scaling.tex" 1729470722.5788 242 45d02f122ac8dd1aee4218b39fe96373 ""
   "equations/lambda_scaling.tex" 1729463015.87778 307 60d9d53b4726af9eda29a798a7dce3b0 ""
