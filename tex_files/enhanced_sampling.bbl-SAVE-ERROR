@@ -1,0 +1,164 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Sugita1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=19a2698a8ef84fc6b8fa7ddd71e25bad}{%
+           family={Sugita},
+           familyi={S\bibinitperiod},
+           given={Yuji},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=00634c667b5b6d49d81f7d759813be3c}{%
+           family={Okamoto},
+           familyi={O\bibinitperiod},
+           given={Yuko},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{dfffde8eacff394ef7d3fdada5670cba}
+      \strng{fullhash}{dfffde8eacff394ef7d3fdada5670cba}
+      \strng{bibnamehash}{dfffde8eacff394ef7d3fdada5670cba}
+      \strng{authorbibnamehash}{dfffde8eacff394ef7d3fdada5670cba}
+      \strng{authornamehash}{dfffde8eacff394ef7d3fdada5670cba}
+      \strng{authorfullhash}{dfffde8eacff394ef7d3fdada5670cba}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We have developed a formulation for molecular dynamics algorithm for the replica-exchange method. The effectiveness of the method for the protein-folding problem is tested with the penta-peptide Met-enkephalin. The method can overcome the multiple-minima problem by exchanging non-interacting replicas of the system at several temperatures. From only one simulation run, one can obtain probability distributions in canonical ensemble for a wide temperature range using multiple-histogram reweighting techniques, which allows the calculation of any thermodynamic quantity as a function of temperature in that range. q}
+      \field{issn}{00092614}
+      \field{issue}{1-2}
+      \field{journaltitle}{Chemical Physics Letters}
+      \field{month}{11}
+      \field{title}{Replica-exchange molecular dynamics method for protein folding}
+      \field{volume}{314}
+      \field{year}{1999}
+      \field{pages}{141\bibrangedash 151}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/S0009-2614(99)01123-9
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0009261499011239
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0009261499011239
+      \endverb
+    \endentry
+    \entry{Wang2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7a95b7887d6363e99bef6bbbcb9ed9b3}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lingle},
+           giveni={L\bibinitperiod}}}%
+        {{hash=67c473c9409a01573df69f178f249cd7}{%
+           family={Friesner},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=19c31bd7a5f1b611d6b77128dc81e872}{%
+           family={Berne},
+           familyi={B\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Chemical Society}%
+      }
+      \strng{namehash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \strng{fullhash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \strng{bibnamehash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \strng{authorbibnamehash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \strng{authornamehash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \strng{authorfullhash}{93fd44e28c4f06cd980d8aaf7190b686}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A small change in the Hamiltonian scaling in Replica Exchange with Solute Tempering (REST) is found to improve its sampling efficiency greatly, especially for the sampling of aqueous protein solutions in which there are large-scale solute conformation changes. Like the original REST (REST1), the new version (which we call REST2) also bypasses the poor scaling with system size of the standard Temperature Replica Exchange Method (TREM), reducing the number of replicas (parallel processes) from what must be used in TREM. This reduction is accomplished by deforming the Hamiltonian function for each replica in such a way that the acceptance probability for the exchange of replica configurations does not depend on the number of explicit water molecules in the system. For proof of concept, REST2 is compared with TREM and with REST1 for the folding of the trpcage and β-hairpin in water. The comparisons confirm that REST2 greatly reduces the number of CPUs required by regular replica exchange and greatly increases the sampling efficiency over REST1. This method reduces the CPU time required for calculating thermodynamic averages and for the ab initio folding of proteins in explicit water. © 2011 American Chemical Society.}
+      \field{issn}{15205207}
+      \field{issue}{30}
+      \field{journaltitle}{Journal of Physical Chemistry B}
+      \field{month}{8}
+      \field{title}{Replica exchange with solute scaling: A more efficient version of replica exchange with solute tempering (REST2)}
+      \field{volume}{115}
+      \field{year}{2011}
+      \field{pages}{9431\bibrangedash 9438}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/JP204407D/ASSET/IMAGES/JP-2011-04407D_M006.GIF
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/full/10.1021/jp204407d
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/full/10.1021/jp204407d
+      \endverb
+    \endentry
+    \entry{Zhang2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ee2c650864672f5067e7098e9057ac7e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yumeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e218b94f2d02c22a9710ea1e67a14e16}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaorong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2215b97062210839affe8436a652adba}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianhan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d731401b16bb136f21fd2a6f080e1314}
+      \strng{fullhash}{d731401b16bb136f21fd2a6f080e1314}
+      \strng{bibnamehash}{d731401b16bb136f21fd2a6f080e1314}
+      \strng{authorbibnamehash}{d731401b16bb136f21fd2a6f080e1314}
+      \strng{authornamehash}{d731401b16bb136f21fd2a6f080e1314}
+      \strng{authorfullhash}{d731401b16bb136f21fd2a6f080e1314}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Replica exchange with solute tempering (REST) is a highly effective variant of replica exchange for enhanced sampling in explicit solvent simulations of biomolecules. By scaling the Hamiltonian for a selected "solute" region of the system, REST effectively applies tempering only to the degrees of freedom of interest but not the rest of the system ("solvent"), allowing fewer replicas for covering the same temperature range. A key consideration of REST is how the solute−solvent interactions are scaled together with the solute−solute interactions. Here, we critically evaluate the performance of the latest REST2 protocol for sampling large-scale conformation fluctuations of intrinsically disordered proteins (IDPs). The results show that REST2 promotes artificial protein conformational collapse at high effective temperatures, which seems to be a designed feature originally to promote the sampling of reversible folding of small proteins. The collapse is particularly severe with larger IDPs, leading to replica segregation in the effective temperature space and hindering effective sampling of large-scale conformational changes. We propose that the scaling of the solute−solvent interactions can be treated as free parameters in REST, which can be tuned to control the solute conformational properties (e.g., chain expansion) at different effective temperatures and achieve more effective sampling. To this end, we derive a new REST3 protocol, where the strengths of the solute−solvent van der Waals interactions are recalibrated to reproduce the levels of protein chain expansion at high effective temperatures. The efficiency of REST3 is examined using two IDPs with nontrivial local and long-range structural features, including the p53 N-terminal domain and the kinase inducible transactivation domain of transcription factor CREB. The results suggest that REST3 leads to a much more efficient temperature random walk and improved sampling efficiency, which also further reduces the number of replicas required. Nonetheless, our analysis also reveals significant challenges of relying on tempering alone for sampling large-scale conformational fluctuations of disordered proteins. It is likely that more efficient sampling protocols will require incorporating more sophisticated Hamiltonian replica exchange schemes in addition to tempering.}
+      \field{journaltitle}{Cite This: J. Chem. Theory Comput}
+      \field{title}{Re-Balancing Replica Exchange with Solute Tempering for Sampling Dynamic Protein Conformations}
+      \field{volume}{19}
+      \field{year}{2023}
+      \field{pages}{1602\bibrangedash 1614}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1021/acs.jctc.2c01139
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.jctc.2c01139
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.jctc.2c01139
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
