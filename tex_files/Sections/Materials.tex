@@ -1,6 +1,9 @@
 For any simulations initial positions of the particles are very important.
 PDB files provides us with the required information about the initial coordinates where each atom is represented as a particle in space.
 It might get one wondering on how can a bunch of particles arranged in a 3-dimentional space can behave as a protein or a small molecule.
-This is be achieved with the help of force-field parameters which are a set of basic parameters that governs the interaction potentials between the different atoms of the molecule or protein.
+This is achieved with the help of force-field parameters which are a set of basic parameters that governs the interaction potentials between the different atoms of the molecule or protein.
 These force-field parameters are derived and optimized from quantum mechanical calculations and experimental data which helps us in replicating the macroscopic observables.
-    
+There are many force-fields available fo both explicit and implicit solvent models.
+For explicit solvent models, most commonly known force-fields are Amber99SB-ILDN$^{*}$,Amber99SB-\textit{disp}, CHARMM36m, OPLS-AA, GROMOS96, etc in which we will be using Amber99SB-ILDN$^{*}$ force-field as it has shown to reproduce the experimental ensembles of IDPs.
+$\alpha$-synuclein is an intrinsically disordered protein which is known to be involved in Parkinson's disease and its C-terminal region made up of 20 amino acids will be our system of interest.
+     
