@@ -1,9 +1,43 @@
-For any simulations initial positions of the particles are very important.
-PDB files provides us with the required information about the initial coordinates where each atom is represented as a particle in space.
-It might get one wondering on how can a bunch of particles arranged in a 3-dimentional space can behave as a protein or a small molecule.
-This is achieved with the help of force-field parameters which are a set of basic parameters that governs the interaction potentials between the different atoms of the molecule or protein.
-These force-field parameters are derived and optimized from quantum mechanical calculations and experimental data which helps us in replicating the macroscopic observables.
-There are many force-fields available fo both explicit and implicit solvent models.
-For explicit solvent models, most commonly known force-fields are Amber99SB-ILDN$^{*}$,Amber99SB-\textit{disp}, CHARMM36m, OPLS-AA, GROMOS96, etc in which we will be using Amber99SB-ILDN$^{*}$ force-field as it has shown to reproduce the experimental ensembles of IDPs.
-$\alpha$-synuclein is an intrinsically disordered protein which is known to be involved in Parkinson's disease and its C-terminal region made up of 20 amino acids will be our system of interest.
-     
+\subsection{Spacial co-ordinates and force driving parameters for the simulations.}
+
+In molecular simulations, the initial positions of particles play a crucial role in determining the outcome and accuracy of the simulation.
+The Protein Data Bank (PDB) files provide the necessary three-dimensional atomic coordinates, where each atom is represented as a discrete particle in space.
+One might wonder how an arrangement of such particles in a 3-dimensional framework can emulate the behavior of complex biomolecules like proteins or small ligands.
+This is accomplished through the application of molecular mechanics principles, which utilize force-field parameters to define interaction potentials governing the behavior of the atoms.
+
+Force-field parameters are sets of fundamental constants and functions derived from quantum mechanical calculations, molecular dynamics, and empirical data, allowing for the accurate representation of interatomic forces.
+These parameters include bonded interactions (such as bond stretching, angle bending, and torsional terms) and non-bonded interactions (such as van der Waals forces and electrostatic interactions).
+By optimizing these parameters with the help of experimental data and quantum mechanical properties, the simulations can reproduce macroscopic observables and dynamical behaviors of the molecular system under study.
+
+Various force fields have been developed for use in molecular simulations, tailored for both explicit and implicit solvent models.
+Explicit solvent force fields, which simulate the environment around the biomolecule by representing individual solvent molecules, include widely-used parameter sets such as AMBER99SB-ILDN$^{*}$, AMBER99SB-\textit{disp}, CHARMM36m.
+In this study, we will employ the AMBER99SB-\textit{disp} force field, as it has been shown to accurately reproduce experimental ensembles and conformational properties of intrinsically disordered proteins (IDPs).
+
+The intrinsically disordered protein (IDP) $\alpha$-synuclein, which is implicated in the pathogenesis of Parkinson’s disease, will serve as the model system for this study.
+Specifically, we will focus on the C-terminal region of $\alpha$-synuclein, consisting of 20 amino acid residues, which will be subjected to molecular dynamics simulations.
+This region is of particular interest due to its role in interaction with small molecules such as Fasudil.
+The use of a refined force field like AMBER99SB-\textit{disp} will enable us to explore the conformational landscape and dynamic interaction behavior of $\alpha$-synuclein with high fidelity, providing insights into its structural properties 
+and interactions that contribute to develope more potent small molecules.\\
+
+\subsection{Simulation software and protocols.}
+
+For all molecular dynamics (MD) simulations, we employ GROMACS 2023.5, integrated with PLUMED 2.8.0 to enhance the simulation capabilities.
+GROMACS (Groningen Machine for Chemical Simulations) is a highly versatile and widely-used molecular dynamics simulation package that provides the computational tools necessary for simulating a broad spectrum of molecular systems, ranging from small organic compounds to large and complex biomolecular assemblies such as proteins, nucleic acids, and lipid bilayers.
+Its high efficiency and optimized algorithms allow for large-scale simulations with detailed atomic resolution, making it suitable for studying the dynamic behavior of biomolecules over extended timescales.\\
+
+To further enrich the simulation protocols, PLUMED 2.8.0 is employed as a plugin for GROMACS.
+PLUMED is a sophisticated software package that expands the functionalities of traditional MD simulations by providing advanced sampling techniques and collective variable (CV) analysis tools.
+These enhanced sampling methods include metadynamics, umbrella sampling, and other free energy calculation techniques, which allow for an efficient exploration of the free energy landscape and conformational space of biomolecular systems.
+The use of PLUMED enables the investigation of rare events and slow conformational changes that are often inaccessible through conventional MD simulations.\\
+
+For trajectory visualization and molecular modeling, software tools such as Visual Molecular Dynamics (VMD) and PyMOL are employed.
+These programs facilitate the analysis of MD trajectories by allowing the user to visually inspect the time-dependent behavior of the system, including changes in secondary and tertiary structures, interactions between molecules, and solvent effects.
+VMD, in particular, offers extensive functionalities for trajectory analysis, such as calculating root mean square deviation (RMSD), root mean square fluctuations (RMSF), and hydrogen bonding patterns, while PyMOL provides high-quality molecular graphics for generating publication-ready images.\\
+
+In addition to visualization, quantitative trajectory analysis is conducted using MDTraj, a Python-based library designed for analyzing molecular dynamics trajectories.
+MDTraj provides robust methods for calculating various structural properties, such as distances, angles, dihedral angles, contact maps, and clustering of conformational states.
+These analyses enable the extraction of meaningful data from the simulation trajectories, aiding in the interpretation of structural dynamics and the evaluation of molecular interactions.\\
+
+To ensure the reliability and reproducibility of the simulation results, the convergence of the molecular dynamics simulations is assessed through statistical methods such as block averaging.
+The Pyblock Python library is utilized for this purpose, implementing block averaging techniques to estimate statistical uncertainties and evaluate the convergence behavior of calculated observables.
+This method helps confirm that the simulation has adequately sampled the relevant conformational space and that the results are statistically significant.
