@@ -1,0 +1,35 @@
+\begin{enumerate}
+\item Basic installation of plumed and gromacs with openmpi preinstalled on a Linux system with the gcc compiler in a bash environment. 
+This series of commands assumes you have the variable \$MPICXX set. 
+Further gains in performance can be reached by utilizing multiple NVIDIA GPUs and the CUDA compiler, nvcc, and the cude runtime. Detailed descriptions on compiling GROMACS and PLUMED2 can be found at \href{http://gromacs.org}{http://gromacs.org} and \href{http:/plumed.org}{http:/plumed.org}, respectively.\\
+    \begin{minipage}[t]{\linewidth}
+        \begin{lstlisting}[language=bash,xleftmargin=0mm,autogobble,breaklines=true]
+            #!/bin/bash
+            INSTALL_ROOT=$HOME/opt
+            mkdir src
+            cd src
+            git clone https://github.com/plumed/plumed2.git
+            git clone https://github.com/gromacs/gromacs.git
+            cd gromacs
+            GMX_version=2024.3
+            git checkout -b v$GMX_version$
+            cd ../plumed2
+            ./configure --prefix=$HOME/opt --enable-modules=all CXX="$MPICXX" CXXFLAGS="-O3 -axSSE2,AVX" 
+            make
+            make check
+            make install
+            echo 'export PLUMED_KERNEL="/usr/share/lib/libplumedKernel.so"' >> ~/.bashrc
+            echo 'export PATH=$HOME/opt/bin:$PATH' >> ~/.bashrc
+            echo 'export PLUMED_ROOT=$HOME/opt'
+            source ~/.bashrc
+            cd ../gromacs
+            plumed patch -e gromacs-${GMX_version}
+            mkdir build
+            cd build
+            cmake .. -DGMX_THREAD_MPI=OFF -DGMX_MPI=ON -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON -DCMAKE_INSTALL_PREFIX=$HOME/opt
+            make 
+            make check 
+            make install
+        \end{lstlisting}
+    \end{minipage}\label{notes:installation}
+\end{enumerate}

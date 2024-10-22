@@ -2,11 +2,15 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[style=numeric-comp]{biblatex}
+\usepackage[doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{changepage}
 \usepackage{amsmath}
+\usepackage{lstautogobble}
+\usepackage{hyperref}
+\lstset{tabsize=2}
+\bibstyle{unsrt}
 \usepackage[%
     left=1in,%
     right=1in,%
@@ -53,12 +57,21 @@
 \section{Methods}
 \begin{adjustwidth}{2in}{0in}
 \input{Sections/Methods.tex}
-\begin{adjustwidth}{2in}{0in}
 
-\end{adjustwidth}
 \input{Sections/Simulations.tex}
+\end{adjustwidth}
+
+\section{Notes}
+\begin{adjustwidth}{1.7in}{0in}
+\input{Sections/Notes.tex}
 \end{adjustwidth}
 \input{tables/vdw_scaling_table}
 \input{tables/vdw_noscaling_table.tex}
 
+\section{Acknowledgements}
+I thannk blah blah for the blah blah to the blah blah, edit this for sure.
+
+
+
+\printbibliography[title={References}]
 \end{document}
