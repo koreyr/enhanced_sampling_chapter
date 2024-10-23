@@ -1,8 +1,8 @@
 We use C-terminal of $\alpha$-synuclein in presence of a ligand called "Fasudil" and use REST2 and REST3 enhanced sampling techniques to simulate with our base temperature at 300K and 450K as maximum temperature to generate the temperature ladder.
 We generate 10 replicates for REST2 and 8 replicates for REST3 simulations.
 The protein is solvated using tip4p-\textit{disp} a 4 point water model which has shown good agreement with IDP's and sufficient amount of NA$^{+}$ ions are added to netralize the system.
-The system is minimized up to 50000 steps using steepest decent algorithm and then system has undergone a reguras equlibration.
-The system is heated up to 300K under NVT ensemble for 500ps coupled to a temperature bath using V-rescale algorithm.
- 
+The system is energy minimized up to 50000 steps using steepest decent algorithm and then system has undergone a reguras equlibration.
+After a successful minimization the system is heated up to 300K under NVT ensemble for 500ps coupled to a temperature bath using V-rescale algorithm.
+Once the solvated system is heated up, it  
 Once the solvated replicas are well equlibrated, the replicates are simulated under NVT ensemble for 1$\mu$s totaling an aggregate of 16$\mu$s.
 
