@@ -25,9 +25,9 @@ This outcome is unfavorable when attempting to capture a representative ensemble
 By incorporating the scaling factor $\kappa_n$, where $n=\{1,2,3,\ldots,n_{replica}\}$, the dampening effect of $\lambda$ is deminished. 
 To accomplish this $\kappa_n$ exist in the range $[1.0,1.06]$. 
 Due to the method of implementation the base replica (unscaled topology), following conversion of the topologies to REST3 \cite{Zhang2023} formalism using combination rule 1 instead of 2, does not match the potential energy of the original topology. 
-The implementation of REST3 by \citeauthor{Zhang2023} targeted scaling of protein-water lj parameters by means of computing C6 and C12 parameters. 
-The descrepancy between the unscaled-converted topology and the original topology is observed via machine error, however, the conformational sampling desired is recovered.
-
+The implementation of REST3 by \citeauthor{Zhang2023} target scaling of protein-water lj parameters by means of computing C6 and C12 parameters. 
+There exists a descrepancy between the unscaled-converted topology and the original topology via machine error of switching the potential from combination rule 2 to combination rule 1 in GROMACS, however, the conformational sampling desired is observed. When $\lambda$ scaling is applied, as in REST2, the well depth of the LJ potential is deminished, Figure 
+\input{figures/lj_curves.tex}
 where $\lambda_n$ is still applied to the protein in the same fashion as REST2 \cite{Wang2011} and solvent scaling is applied to the water oxygen via the well-depth, $\epsilon_{OW}$, borrowing from the methods described in \citeauthor{Best2010} \citeyear{Best2010}. 
 To overcome the inherent mechanics within GROMACS\cite{VanDerSpoel2005}, nonbonded overrides are implemented for water-water and water-ion.
 Additionally, one can override water-cosolute if scaling is not desired between the two. 
