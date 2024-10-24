@@ -1,14 +1,19 @@
 We use C-terminal of $\alpha$-synuclein in presence of a ligand called "Fasudil" and use REST2 and REST3 enhanced sampling techniques to simulate with our base temperature at 300K 
 and 450K as maximum temperature to generate the temperature ladder.
+We made sure that the terminal capping is done for the 20 amino acid peptide.
 We generate 10 replicates for REST2 and 8 replicates for REST3 simulations.
-The protein is solvated using tip4p-\textit{disp} a 4 point water model which has shown good agreement with IDP's and sufficient amount of NA$^{+}$ ions are added to netralize the 
+The protein is solvated in a 6.5 nm cubic box using tip4p-\textit{disp} a 4 point water model which has shown good agreement with IDP's and sufficient amount of NA$^{+}$ or CL$^{-}$ ions are added to netralize the 
 system.
-The system is energy minimized up to 50000 steps using steepest decent algorithm and then system has undergone a rigorous equilibration.
+The system is energy minimized up to 5000 steps using steepest decent algorithm and then system has undergone a rigorous equilibration.
 After a successful minimization the system is heated up to 300K under NVT ensemble for 500ps coupled to a temperature bath using V-rescale algorithm.
 Once the solvated system is heated up, the system undergoes a 100ps equilibration under NPT ensemble where it is coupled with Berendsen barostat so that the pressure of the system 
 is maintained at 1 bar.
 Berendsen barostat helps in a quick convergence of pressure towards 1 bar after which we equilibrate under NPT condition for another 40ns using Parrinello-Rahman barostat which 
 helped the system to achieve a convergence around 1 bar of pressure.
 After the pressure was well converged the last frames of the replicas are used as a staring configurations for REST2 and REST3. 
-Once the solvated replicas are well equilibrated, the replicates are simulated under NVT ensemble for 1$\mu$s totaling an aggregate of 16$\mu$s.
+The replicates are simulated under NVT ensemble for 1.98$\mu$s and 1.3$\mu$s totaling an aggregate of 19.8$\mu$s and 10.4$\mu$s for REST2 and REST3 ensembles.
+Radius of Gyration which gives us an estimate whether the protein is collapsed or elongated is used as a metric and its distribution is computed using MDTraj after the trajectories 
+are corrected for there periodicity.
+As shown in the Fig : we can see that the protein ensemble simulated using REST3 stays elongated when compared to REST2 as there is a positive shift in the distribution of 
+$\alpha$-carbon Rg. 
 
