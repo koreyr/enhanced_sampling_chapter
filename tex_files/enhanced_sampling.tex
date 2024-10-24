@@ -40,7 +40,7 @@
 
 \textbf{Keywords} Molecular dynamics, Replica Exchange, Collective variables, Solute-Scaling, $\alpha$-synuclein
 
-\section{Introduction}
+\section{Introduction}\label{sec:Intro}
 
 % Your content goes here
     
@@ -54,10 +54,13 @@
 \input{Sections/Materials.tex}
 
 \section{Methods}
-
+\input{Sections/Methods_header.tex}
+\subsection{Creating the Simulation Input}
 \input{Sections/Methods.tex}
-
+\subsection{Running a REST2 Simulation}
 \input{Sections/Simulations.tex}
+\subsection{Performing Analysis}
+\input{Sections/Analysis.tex}
 
 \section{Notes}
 
@@ -68,7 +71,6 @@
 
 \section{Acknowledgements}
 I thannk blah blah for the blah blah to the blah blah, edit this for sure.
-
 
 \bibstyle{unsrtnat}
 \bibliography{enhanced_sampling.bib}
