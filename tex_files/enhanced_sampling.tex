@@ -2,7 +2,8 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\usepackage{natbib}%[doi=false,isbn=false,url=false,eprint=false,natbib=true]
+\bibliographystyle{unsrtnat}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{changepage}
@@ -19,8 +20,8 @@
     paperheight=11in,%
     paperwidth=8.5in%
 ]{geometry}%
-\addbibresource{enhanced_sampling.bib}
-\bibstyle{unsrt}
+
+
 \title{Enhanced Sampling Techniques}
 \begin{document}
 
@@ -69,6 +70,6 @@
 I thannk blah blah for the blah blah to the blah blah, edit this for sure.
 
 
-
-\printbibliography[title={References}]
+\bibstyle{unsrtnat}
+\bibliography{enhanced_sampling.bib}
 \end{document}
