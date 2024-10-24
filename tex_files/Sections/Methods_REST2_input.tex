@@ -1,0 +1,32 @@
+
+Implementing REST(2 or 3) using the GROMACS\cite{VanDerSpoel2005} molecular dynamics engine requires installation of PLUMED2 plugin version$\ge2.8$ and patching of GROMACS source code before compiling mdrun. Please note that PLUMED2 can be used alongside the AMBER MD engine version$ge18$ and NAMD version$\ge2.12$ at a significant cost to performance. For a simple walkthrough of this installation procedure for GROMACS please refer to Note \ref{notes:installation}.
+%We need to discuss REST2 generation first, then state added edits to produce ssREST3
+The first step in the ssREST3 implementation is to generate the a processed topology file your solvated protein of interest using \textit{-pp} option in \textit{gmx grompp}, note any position restraints contanted in an mdp file will be contained in the processed topology file.
+
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true]
+    gmx grompp -f *.mdp -c *.gro -r *.gro -p topol.top -o *.tpr -pp
+\end{lstlisting}
+
+\noindent This topology files will be used as to implement REST2 scaling procedure using PLUMED2.8 where one will supply the processed topology file and the corresponding $\lambda$ value as such :
+
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true,escapeinside={(*}{*)}]
+    plumed partial_tempering   (*$\lambda_{n}$*) < processed.top > scaled.top
+\end{lstlisting}
+
+After the topology files are generated for the respective replicates, the oxygen atom 
+of the solvent, for example OW$_{tip4pd}$ which is the water oxygen atom of amber99sb-\textit{disp} force field, will have $\epsilon$ scaled by a factor of $\kappa^{2}_{n}$ to satisfy the scaling condition, 
+ Eqs. \ref{eq:kappa_scaling} and \ref{eq:wat_scaling}. 
+If $\kappa_{n}$ is set to 1.0 across all replicas the topologies conform to the REST2 convention. 
+Along with the scaling of the water oxygen, we recover the interactions between the solvent molecules, and between solvent and ions, thus targeting only the protein-water LJ potential. 
+This is accomplished by adding three non-bonded overrides to the \textit{[nonbonded]} section of the GROMACS topology file as shown in Table \ref{tab:eps_noscale_table}.
+Once these changes are made to the topology, we are ready to simulate ssREST3.
+Using the below command all the replicates are run in parallel and the the conformational exchange between the replicas is set for every 800 steps which equates to 1.6 ps.
+
+\begin{lstlisting}[language=sh, basicstyle=\ttfamily\small, breaklines=true]
+    gmx  grompp -f *.mdp -c *.gro -r *.gro -p scaled.top -o scaled.tpr
+    gmx mdrun -s scaled.tpr -multi <replica folders> -replex 800 -deffnm replica -plumed plumed.dat
+\end{lstlisting}
+
+
+At the start of the simulations it is best practice to check the acceptance ratios between replicas to ensure that the scaling is not too aggressive nor too weak. 
+A minimum of 20\% acceptance ratio is recommended for the simulations to be considered valid.
